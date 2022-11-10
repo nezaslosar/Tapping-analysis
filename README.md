@@ -22,6 +22,8 @@ All this files (7 in total), which we get from .wav to .csv files should be coll
 All folders with participant's files should be in same directory, which is *the main and only input* for analysing code.
 
 ## Analysis
+Analysis code is written in jupyter notebook: Tapping_analysis_final.ipynb
+
 - Be careful to install all packages needed, especially R to Python, because part of the code is proceed in R.
 - Be careful to change to the right path in R code - add directory in which you are working (name of the file is already set).
 
