@@ -60,7 +60,7 @@ ANGLE-s  are compiled in excel sheets for each trial and opened in R R studio  (
 
  
 **Continuation phase**
-This starts with col. F in the main excel sheet. Taps that belong to the synch phase (smaller than 21 ; 28 and 20,8) are deleted (contMTC)
+Taps that belong to the synch phase (smaller than 21 ; 28 and 20,8) are deleted (contMTC)
 Outliers smaller than the value IOI lower limit from earlier or larger than IOI upper limit are deleted (preIOI). 
 Outliers smaller than Q1-3*IQR or larger than Q3+3*IQR are deleted (contIOI).
 
