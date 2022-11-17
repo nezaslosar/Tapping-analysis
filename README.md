@@ -1,5 +1,6 @@
 # Tapping-analysis
 Analysis of tapping task in speech and music entrainment study.
+I run it on Python 3.9, Jupyter notebook.
 Still working on it.
 
 ## About the tapping task
