@@ -1,7 +1,10 @@
 # Tapping-analysis
 Analysis of tapping task in speech and music entrainment study.
 I run it on Python 3.9, Jupyter notebook.
-Still working on it.
+Still in improvement and updating.
+
+File Tapping_analysis_final does not contain circular analysis of continuation phase, because in general is not needed.
+File Tapping_analysis_cont_circ_final contains circular analysis of continuation phase in case you need it.
 
 ## About the tapping task
 For tapping task we collected data with Cubase 12. 
@@ -71,6 +74,8 @@ Outliers smaller than the value IOI lower limit from earlier or larger than IOI 
 Outliers smaller than Q1-3*IQR or larger than Q3+3*IQR are deleted (contIOI).
 
 
+If you would like to process circular analysis also on continuation file, then choose and run Tapping_analysis_cont_circ_final file.
+
 **Linear measures for the continuation phase**
 -	mIOI(cont) – mean of col. H
 -	CV(cont) – spread of col. H / mIO(Icont)
@@ -100,3 +105,12 @@ Output can be viewed in *output folder*. Output are excels files (named: partici
 Addition to this are files: IOI_filter_80,IOI_filter_80m, IOI_filter_120, IOI_filter_120m, IOI_filter_150, IOI_filter_150m, IOI_filter_SMT, which is IOI limits files, later used in all seperate files. 
 
 ## Interpretation of results
+m_diff is the mean difference from the reference. it let's negativre and positie asynchrony values eqaul eachother out, so it doesn't really tell you tell you how precise the part. was, but it is useful if you want to see if there is Negative Mean Asynchrony.
+
+m_abs_diff is the mean of absoulute asynchronies. this tells you how accurate tapping was but it doesn't tell you if it was anticipatory or lagging. we use this as the measure of tapping accuracy.
+
+mean IOI and SD are for the IOI filter (IQR etc.)
+
+mIOIcont is the mean (IOI =tempo) of the cont. phase
+
+CVcont is the SD/mIOIcont which shows you the spread of the taps relative to the participants' tempo
